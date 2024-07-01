@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sihvam fitnees</title>
+    <style>
+        body {
+            font-family: "Mukta", sans-serif;
+              position: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background: url("img/pexels-roman-odintsov-4553611.jpg") no-repeat center center fixed;
+            background-size: 100% 100%;
+            /* Stretch the image to cover the entire screen */
+        }
+        /* .header{ */
+           
+        /* } */
+        .left{
+            display: inline-block;
+         /* border: 2px solid red; */
+         position: absolute;
+         left: 20px;
+          top: 18px;
+        }
+        .mid{
+            display: block;
+          /* border: 2px solid green; */
+          width: 43%;
+          margin: 10px auto;
+        }
+        .right{
+            display: inline-block;
+          /* border: 2px solid yellow; */
+          position: absolute;
+          right: 34px;
+          top: 22px;
+        }
+        .navbar li{
+            display: inline-block;
+            
+        }
+        .navbar li a{
+            color: white;
+            padding: 19px;
+           text-decoration: none;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(20, 20, 20);
+            font-size: 15px;
+        }
+        .left img{
+            width: 95px;
+            /* margin: 5px; */
+            
+        }
+        .left div{
+            text-align: center;
+            margin: -12px 0px;
+        }
+        .btn{
+            margin: 3px;
+            padding: 4px;
+            /* width: 100px; */
+            background-color: rgb(61, 60, 60);
+            color: white;
+            border: 2px solid rgb(128, 125, 125);
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(99, 95, 95);
+        }
+        .contener{
+            /* border: 2px solid white; */
+    margin: 88px 19px;
+    width: 24%;
+    padding: 75px 75px;
+    border-radius: 10px;
+
+}
+     .fromgroup input{
+        margin: 7px 52px;
+    padding: 5px 32px;
+    font-family: "Mukta", sans-serif;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid black;
+    display: block;
+}
+    .ptn{
+        margin: 3px 119px;
+    padding: 4px;
+    /* width: 100px; */
+    background-color: rgb(61, 60, 60);
+    color: white;
+    border: 2px solid rgb(128, 125, 125);
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    }
+    .ptn:hover{
+            background-color: rgb(10, 9, 9);
+    }
+     
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="header">
+    <div class="left">
+     <img src="data:image/jpeg;base64,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" alt="">
+     <div>Shivam fitnees</div>
+    </div>
+    <div class="mid">
+<ul class="navbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Contacts us</a></li>
+    <li><a href="#">Fitnees calculater</a></li>
+</ul>
+    </div>
+    <div class="right">
+<button class="btn">call us now</button>
+<button class="btn">Email us now</button>
+    </div>
+</header>
+<div class="contener">
+    <h1>Join the best gym of patna</h1>
+    <form action="noaction.php">
+     <div class="fromgroup">
+        <input type="text" name="" placeholder="Enter your name">
+     </div>
+     <div class="fromgroup">
+        <input type="text" name="" placeholder="Enter your Email">
+     </div>
+     <div class="fromgroup">
+        <input type="text" name="" placeholder="Enter your dite">
+     </div>
+     <div class="fromgroup">
+        <input type="text" name="" placeholder="Enter your Landmark">
+     </div>
+    </form>
+    <button class="ptn">submit</button>
+</div>
+</body>
+
+</html>
